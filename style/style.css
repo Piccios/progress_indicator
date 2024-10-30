@@ -24,3 +24,19 @@ p{
 }
 
 
+/* Indicator scrollbar */
+
+:root {
+    --indicator-height: 10px;
+    --indicator-color: #f600ff;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--indicator-height);
+    width: 0%; 
+    background: var(--indicator-color);
+    z-index: 1000;
+}
