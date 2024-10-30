@@ -6,7 +6,7 @@
 
 body{
     background-color: #15141b;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Sans-serif';
 }
 
 h3{
@@ -18,31 +18,4 @@ p{
     color: white;
 }
 
-/* Indicator scrollbar */
-
-:root {
-    --indicator-height: 10px;
-    --indicator-color: #f600ff;
-}
-
-.coontent::before{
-    content: "";
-    position: fixed;
-    height: var(--indicator-height);
-    inset: 0;
-    background: var(--indicator-color);
-    animation: scale 3s linear;
-    animation-timeline: scroll(root);
-    transform-origin: 0 50%;
-}
-
-@keyframes scale{
-    0%{
-        transform: scaleX(0);
-    }
-    90%,
-    100% {
-        transform: scaleX(1);
-    }
-}
 
